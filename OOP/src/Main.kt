@@ -1,3 +1,8 @@
+import java.net.DatagramPacket
+import java.net.DatagramSocket
+import java.net.InetAddress
+import java.net.SocketTimeoutException
+
 // ✅ Nível 1 — Fundamentos (Simples)
 // 🟢 Exercício 1: Criar uma classe simples
 // Crie uma classe Pessoa com os atributos nome e idade,
@@ -566,16 +571,5 @@ class Turma() {
 }
 
 fun main() {
-    val turma = Turma()
 
-    turma.adicionarAluno(Aluno("Ana", 8.5))
-    turma.adicionarAluno(Aluno("Carlos", 6.0))
-    turma.adicionarAluno(Aluno("Beatriz", 7.5))
-
-    println("Média da turma: ${turma.calcularMedia()}")
-    println("Alunos aprovados:")
-
-    for (aluno in turma.listarAprovados()) {
-        println("${aluno.nome} com nota ${aluno.nota}")
     }
-}
